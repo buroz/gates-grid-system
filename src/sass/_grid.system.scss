@@ -9,7 +9,7 @@ $max_grids: nth($first_item, 2);
 // For non-breakpoint classes
 @for $i from 1 through $max_grids {
   $equ: 100% / $i ;
-  #gate.cell-#{ $i } { width: $equ }
+  #gate.door-#{ $i } { width: $equ }
 }
 
 // For breakpoint classes
@@ -17,7 +17,7 @@ $max_grids: nth($first_item, 2);
   @media all and (max-width: $breakpoint + $gutter_width_calculator) {
     @for $i from 1 through $max_grid_size {
       $equ: 100% / $i ;
-      #gate.cell-#{ $breakpoint }-#{ $i } { width: $equ }
+      #gate.door-#{ $breakpoint }-#{ $i } { width: $equ }
     }
   }
 }
