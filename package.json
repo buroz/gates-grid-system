@@ -6,7 +6,9 @@
   "scripts": {
     "style:watch": "node-sass --watch src/sass/main.scss dist/css/main.css",
     "style:compile": "node-sass src/sass/main.scss dist/css/main.css",
-    "style:prefix": "gulp prefix"
+    "style:prefix": "gulp prefix",
+    "style:production": "node-sass src/sass/main.scss dist/css/main.css && gulp prefix",
+    "style:website": "node-sass src/design/main.scss dist/css/design.css && gulp website"
   },
   "repository": {
     "type": "git",

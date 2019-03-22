@@ -1,9 +1,9 @@
-$gutter_width               : 1300;
-$gutter_width_calculator    : "px";
-$body_font_size             : 14;
-$body_font_size_calculator  : "px";
+$gutter_width               : 64;
+$gutter_width_calculator    : "rem";
+$body_font_size             : 62.5;
+$body_font_size_calculator  : "%";
 $list: ( 
-  1440  : 12,
-  1024  : 6, 
-  768   : 3, 
+  90    : 12,
+  64    : 6,
+  48    : 3,
 );

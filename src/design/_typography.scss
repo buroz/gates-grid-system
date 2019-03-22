@@ -1,0 +1,18 @@
+$font-base          : 1;
+$heading-scale      : .3;
+
+%headings {
+    font-weight: bold !important;
+    letter-spacing: .3rem;
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: $font-base + $heading-scale * (6 - $i) + rem;
+        @extend %headings;
+
+        @media all and (max-width: 48rem) {
+            font-size: ($font-base + $heading-scale * (6 - $i)) / 1.4 + rem
+        }
+    }
+}

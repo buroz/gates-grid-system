@@ -10,3 +10,11 @@ gulp.task('prefix', () => {
     .pipe(rename('gates.min.css'))
     .pipe(gulp.dest('./dist/css/'))
 })
+
+gulp.task('website', () => {
+  return gulp.src('./dist/css/design.css')
+    .pipe(autoprefixer({ browsers: ['last 99 versions'], cascade: false }))
+    .pipe(cleanCSS())
+    .pipe(rename('design.min.css'))
+    .pipe(gulp.dest('./dist/css/'))
+})
