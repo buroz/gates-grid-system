@@ -1,0 +1,12 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box; 
+    appearance: none;
+
+    @extend %clearfix;
+}
+
+body {
+    font-size: $body_font_size#{$body_font_size_calculator} !important; 
+}

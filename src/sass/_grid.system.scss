@@ -1,0 +1,32 @@
+#gates > * {
+  box-sizing: border-box;
+  float: left;
+}
+
+$first_item: nth($list, 1);
+$max_grids: nth($first_item, 2);
+
+// For non-breakpoint classes
+@for $i from 1 through $max_grids {
+  $equ: 100% / $i ;
+  #gate.cell-#{ $i } > * { width: $equ }
+}
+
+// For breakpoint classes
+@each $breakpoint, $max_grid_size in $list {
+  @media all and (max-width: $breakpoint + $gutter_width_calculator) {
+    @for $i from 1 through $max_grid_size {
+      $equ: 100% / $i ;
+      #gate.cell-#{ $breakpoint }-#{ $i } > * { width: $equ }
+    }
+  }
+}
+
+.close {
+  padding-right: ceil(($gutter_width / 2))#{$gutter_width_calculator};
+  padding-left: floor(($gutter_width / 2))#{$gutter_width_calculator};
+  margin-right: auto;
+  margin-left: auto;
+
+  @extend %clearfix;
+}

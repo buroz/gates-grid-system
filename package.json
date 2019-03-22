@@ -1,0 +1,38 @@
+{
+  "name": "gates-grid-system",
+  "version": "1.0.0",
+  "description": "Scss Grid System ",
+  "main": "main.scss",
+  "scripts": {
+    "style:watch": "node-sass --watch src/sass/main.scss dist/css/main.css",
+    "style:compile": "node-sass src/sass/main.scss dist/css/main.css",
+    "style:prefix": "gulp prefix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/buroz/gates-grid-system.git"
+  },
+  "keywords": [
+    "scss",
+    "sass",
+    "grid",
+    "system",
+    "grid",
+    "css"
+  ],
+  "author": "Burak OZ",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/buroz/gates-grid-system/issues"
+  },
+  "homepage": "https://github.com/buroz/gates-grid-system#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-cli": "^2.0.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "node-sass": "^4.11.0"
+  }
+}
