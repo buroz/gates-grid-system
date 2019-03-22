@@ -12,32 +12,30 @@
     background-color: blueviolet
 }
 
-.content {
+.navbar {
     background: grey
 }
-.content1 {
+.content {
     background: red
 }
-.content2 {
-    background: yellow
-}
-.close {
-    background: white
+.footer {
+    background: grey
 }
 
 </style>
 
 </head>
 <body>
-    <div id="gates">
-        <div id="gate" class="content door-3 door-1440-3 door-768-2">asdf 1</div>
-        <div id="gate" class="content1 door-3 door-1440-3 door-768-2">
-            <div class="close">asdf 2</div>
-        </div>
-        <div id="gate" class="content2 door-1 door-1440-1 door-768-1">
-            <div>asdf 3</div>
-            <div style="float: right; height: 150px;">asdf 3</div>
-        </div>
-    </div>
+    <nav id="gates">
+        <div id="gate" class="navbar cell-1">Navbar</div>
+    </nav>
+    <main id="gates" class="close">
+        <section id="gate" class="content cell-1">Main</section>
+    </main>
+    <footer id="gates" class="footer center">
+        <section id="gate" class="cell-3 cell-768-1">1</section>
+        <section id="gate" class="cell-3 cell-768-1">2</section>
+        <section id="gate" class="cell-3 cell-768-1">3</section>
+    </footer>
 </body>
 </html>

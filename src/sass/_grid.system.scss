@@ -9,7 +9,7 @@ $max_grids: nth($first_item, 2);
 // For non-breakpoint classes
 @for $i from 1 through $max_grids {
   $equ: 100% / $i ;
-  #gate.door-#{ $i } { width: $equ }
+  #gate.cell-#{ $i } { width: $equ }
 }
 
 // For breakpoint classes
@@ -17,7 +17,7 @@ $max_grids: nth($first_item, 2);
   @media all and (max-width: $breakpoint + $gutter_width_calculator) {
     @for $i from 1 through $max_grid_size {
       $equ: 100% / $i ;
-      #gate.door-#{ $breakpoint }-#{ $i } { width: $equ }
+      #gate.cell-#{ $breakpoint }-#{ $i } { width: $equ }
     }
   }
 }
@@ -29,19 +29,19 @@ $max_grids: nth($first_item, 2);
 }
 
 .right {
-  float: right;
-  text-align: right;
-  margin-left: auto
+  float: right !important;
+  text-align: right !important;
+  margin-left: auto !important
 }
 
 .left {
-  float: left;
-  text-align: left;
-  margin-right: auto
+  float: left !important;
+  text-align: left !important;
+  margin-right: auto !important
 }
 
 .center {
-  float: none;
-  text-align: center;
-  margin: auto
+  float: none !important;
+  text-align: center !important;
+  margin: auto !important
 }
