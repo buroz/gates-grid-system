@@ -27,3 +27,21 @@ $max_grids: nth($first_item, 2);
   margin-right: auto;
   margin-left: auto;
 }
+
+.right {
+  float: right;
+  text-align: right;
+  margin-left: auto
+}
+
+.left {
+  float: left;
+  text-align: left;
+  margin-right: auto
+}
+
+.center {
+  float: none;
+  text-align: center;
+  margin: auto
+}

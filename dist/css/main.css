@@ -90,53 +90,70 @@ body {
 #gate.door-12 {
   width: 8.33333%; }
 
-@media all and (max-width: 50rem) {
-  #gate.door-50-1 {
+@media all and (max-width: 1440px) {
+  #gate.door-1440-1 {
     width: 100%; }
-  #gate.door-50-2 {
+  #gate.door-1440-2 {
     width: 50%; }
-  #gate.door-50-3 {
+  #gate.door-1440-3 {
     width: 33.33333%; }
-  #gate.door-50-4 {
+  #gate.door-1440-4 {
     width: 25%; }
-  #gate.door-50-5 {
+  #gate.door-1440-5 {
     width: 20%; }
-  #gate.door-50-6 {
+  #gate.door-1440-6 {
     width: 16.66667%; }
-  #gate.door-50-7 {
+  #gate.door-1440-7 {
     width: 14.28571%; }
-  #gate.door-50-8 {
+  #gate.door-1440-8 {
     width: 12.5%; }
-  #gate.door-50-9 {
+  #gate.door-1440-9 {
     width: 11.11111%; }
-  #gate.door-50-10 {
+  #gate.door-1440-10 {
     width: 10%; }
-  #gate.door-50-11 {
+  #gate.door-1440-11 {
     width: 9.09091%; }
-  #gate.door-50-12 {
+  #gate.door-1440-12 {
     width: 8.33333%; } }
 
-@media all and (max-width: 30rem) {
-  #gate.door-30-1 {
+@media all and (max-width: 1024px) {
+  #gate.door-1024-1 {
     width: 100%; }
-  #gate.door-30-2 {
+  #gate.door-1024-2 {
     width: 50%; }
-  #gate.door-30-3 {
+  #gate.door-1024-3 {
     width: 33.33333%; }
-  #gate.door-30-4 {
+  #gate.door-1024-4 {
     width: 25%; }
-  #gate.door-30-5 {
+  #gate.door-1024-5 {
     width: 20%; }
-  #gate.door-30-6 {
+  #gate.door-1024-6 {
     width: 16.66667%; } }
 
-@media all and (max-width: 10rem) {
-  #gate.door-10-1 {
+@media all and (max-width: 768px) {
+  #gate.door-768-1 {
     width: 100%; }
-  #gate.door-10-2 {
-    width: 50%; } }
+  #gate.door-768-2 {
+    width: 50%; }
+  #gate.door-768-3 {
+    width: 33.33333%; } }
 
 .close {
-  max-width: 60rem;
+  max-width: 1300px;
   margin-right: auto;
   margin-left: auto; }
+
+.right {
+  float: right;
+  text-align: right;
+  margin-left: auto; }
+
+.left {
+  float: left;
+  text-align: left;
+  margin-right: auto; }
+
+.center {
+  float: none;
+  text-align: center;
+  margin: auto; }
