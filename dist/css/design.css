@@ -45,9 +45,47 @@ h6 {
   font-weight: normal;
   font-style: normal; }
 
-.navbar {
-  padding: 2rem; }
+.item_link, .item_price {
+  font-size: 1rem;
+  color: #5f5f5f;
+  font-weight: bold;
+  padding: 0 .5rem 1rem .5rem; }
 
-code {
-  font-size: .9rem;
-  font-family: 'courier_prime_coderegular', monospace; }
+body {
+  font-family: 'courier_prime_coderegular';
+  background-color: #f6f6f6;
+  overflow-y: scroll;
+  overflow-x: hidden !important;
+  -webkit-font-smoothing: antialiased; }
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto; }
+
+.main {
+  padding: 0.3rem; }
+
+.item {
+  display: block;
+  padding: 0.3rem;
+  margin-bottom: 1rem; }
+  .item a {
+    text-decoration: none; }
+  .item_image {
+    position: relative;
+    overflow: hidden;
+    display: block;
+    margin-bottom: 0; }
+  .item_info {
+    background-color: white; }
+  .item_title {
+    padding: 1rem 0 .5rem 0;
+    color: #ababab;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block; }
+  .item_link {
+    float: right; }
+  .item_price {
+    float: left; }
