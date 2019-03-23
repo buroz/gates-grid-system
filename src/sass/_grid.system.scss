@@ -1,8 +1,10 @@
 #gates > * {
-  box-sizing: border-box;
   float: left;
 }
 
+#gates {
+  @extend %clearfix;
+}
 $first_item: nth($list, 1);
 $max_grids: nth($first_item, 2);
 $max_breakpoint: nth($first_item, 1);
@@ -33,6 +35,12 @@ $max_breakpoint: nth($first_item, 1);
   float: none !important;
   text-align: center !important;
   margin: auto !important
+}
+
+.right {
+  float: right !important;
+  text-align: right !important;
+  margin-left: auto !important
 }
 
 .huge-screen-container {

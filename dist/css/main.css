@@ -1,9 +1,7 @@
-*,
-*:after,
-*:before {
+#gates {
   *zoom: 1; }
-  :after {
-    content: " ";
+  #gates::after {
+    content: "";
     display: table;
     clear: both; }
 
@@ -41,9 +39,7 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-*,
-*:after,
-*:before {
+* {
   box-sizing: border-box;
   appearance: none; }
 
@@ -51,7 +47,6 @@ body {
   font-size: 62.5% !important; }
 
 #gates > * {
-  box-sizing: border-box;
   float: left; }
 
 #gate.cell-1 {
@@ -125,5 +120,12 @@ body {
   text-align: center !important;
   margin: auto !important; }
 
+.right {
+  float: right !important;
+  text-align: right !important;
+  margin-left: auto !important; }
+
 .huge-screen-container {
-  max-width: 90rem; }
+  max-width: 90rem;
+  margin-right: auto;
+  margin-left: auto; }

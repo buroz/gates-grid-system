@@ -92,6 +92,8 @@ option {
   background-color: white;
   padding: 1rem !important;
   margin: 0 .6rem !important; }
+  .filters > * {
+    float: right; }
 
 .navbar ul {
   display: block; }
@@ -100,7 +102,7 @@ option {
   display: inline-block; }
 
 .header:not(:last-child) {
-  margin-bottom: 2rem !important; }
+  margin-bottom: 1rem !important; }
 
 .item {
   display: block;
