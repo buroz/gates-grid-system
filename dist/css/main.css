@@ -124,3 +124,6 @@ body {
   float: none !important;
   text-align: center !important;
   margin: auto !important; }
+
+.huge-screen-container {
+  max-width: 90rem; }

@@ -20,7 +20,10 @@ $bottom_space: 1rem;
     font-size: 1rem;
     color: rgb(95, 95, 95);
     font-weight: bold;
-    padding: 0 .5rem 1rem .5rem;
+}
+
+%padding_config {
+    padding: .3rem;
 }
 
 
@@ -38,17 +41,30 @@ img {
     height: auto;
 }
 
+#gates {
+    @extend %padding_config;
+}
+
+#gate {
+    @extend %padding_config;
+}
+
+.filters {
+    background-color: white
+}
 
 .main {
-    padding: $gutter;
+
 }
 
 .item {
     display: block;
+    margin-bottom: 1rem;
 
-    padding: $gutter;
-    margin-bottom: $bottom_space;
-
+    &:hover {
+        box-shadow: 0 0 2rem -1.5rem rgba(0,0,0,.63)
+    }
+    
     a {
         text-decoration: none;
     }
@@ -65,21 +81,47 @@ img {
     }
 
     &_title {
-        padding: 1rem 0 .5rem 0;
+        padding: 1rem 0 .5rem 0 !important;
         color: rgb(171, 171, 171);
         font-weight: bold;
         font-size: 1.2rem;
         display: block;
     }
 
+    &_addtocart {
+        background: none;
+        border: none;
+        border-radius: 0;
 
-    &_link {
-        float: right;
+        padding: 1rem !important;
+
+        color: rgb(171, 171, 171);
+        text-transform: uppercase;
+
+        font: {
+            family: 'courier_prime_coderegular';
+            size: .8rem;
+            weight: bold;
+        }
+
+        &:hover {
+            background: #000;
+            border-color: #000;
+            box-shadow: none;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        &:active {
+            background: rgb(171, 171, 171);
+            border-color: rgb(171, 171, 171);
+        }
+        
         @extend %info;
     }
 
     &_price {
-        float: left;
+        display: inline-block;
         @extend %info;
     }
 }

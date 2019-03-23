@@ -5,6 +5,7 @@
 
 $first_item: nth($list, 1);
 $max_grids: nth($first_item, 2);
+$max_breakpoint: nth($first_item, 1);
 
 // For non-breakpoint classes
 @for $i from 1 through $max_grids {
@@ -32,4 +33,10 @@ $max_grids: nth($first_item, 2);
   float: none !important;
   text-align: center !important;
   margin: auto !important
+}
+
+.huge-screen-container {
+  max-width: $max_breakpoint#{$gutter_width_calculator};
+  margin-right: auto;
+  margin-left: auto;
 }
