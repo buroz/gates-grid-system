@@ -95,7 +95,29 @@ option {
 
 .navbar  {
     ul { display: block }
-    li { display: inline-block }
+    li { 
+        display: inline-block;
+
+        @media all and (max-width: 48rem) {
+            display: block;
+        }
+    }
+
+    &_link {
+        padding: 1rem;
+        color: rgb(171, 171, 171);
+
+        @media all and (max-width: 48rem) {
+            font: {
+                size: .8rem;
+            }
+        }
+
+        font: {
+            size: 1rem;
+            weight: bold;
+        }
+    }
 
 }
 

@@ -100,6 +100,18 @@ option {
 
 .navbar li {
   display: inline-block; }
+  @media all and (max-width: 48rem) {
+    .navbar li {
+      display: block; } }
+
+.navbar_link {
+  padding: 1rem;
+  color: #ababab;
+  font-size: 1rem;
+  font-weight: bold; }
+  @media all and (max-width: 48rem) {
+    .navbar_link {
+      font-size: .8rem; } }
 
 .header:not(:last-child) {
   margin-bottom: 1rem !important; }
